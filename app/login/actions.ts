@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { createClient } from "@/utils/supabase/server";
@@ -19,7 +18,6 @@ export async function login(formData: FormData) {
   }
 
   console.log("logged in");
-  revalidatePath("/admin", "layout");
   redirect("/admin");
 }
 
@@ -35,6 +33,11 @@ export async function signup(formData: FormData) {
   if (error) {
     redirect("/error");
   }
-  revalidatePath("/admin", "layout");
   redirect("/admin");
+}
+
+export async function logout() {
+  const supabase = await createClient();
+  await supabase.auth.signOut();
+  redirect("/login");
 }

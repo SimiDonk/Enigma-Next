@@ -35,6 +35,7 @@ export async function updateSession(request: NextRequest) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+
   if (
     !user &&
     !request.nextUrl.pathname.startsWith("/login") &&
@@ -45,8 +46,7 @@ export async function updateSession(request: NextRequest) {
     url.pathname = "/login";
     return NextResponse.redirect(url);
   }
-
-  console.log("User in middleware:", user);
+  console.log("MIDDLEWARE WORKING");
   // IMPORTANT: You *must* return the supabaseResponse object as it is.
   // If you're creating a new response object with NextResponse.next() make sure to:
   // 1. Pass the request in it, like so:
