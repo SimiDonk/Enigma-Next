@@ -22,7 +22,7 @@ export default function LoginPage() {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-sm mx-auto p-4">
-      <h2 className="text-xl mb-2">Bejelentkezés</h2>
+      <h2 className="text-xl mb-2">Login</h2>
       <input
         name="email"
         type="email"
@@ -33,7 +33,7 @@ export default function LoginPage() {
       <input
         name="password"
         type="password"
-        placeholder="Jelszó"
+        placeholder="Password"
         className="block w-full mb-2 p-2 border"
         required
       />
@@ -43,7 +43,7 @@ export default function LoginPage() {
         className="bg-blue-500 text-white px-4 py-2"
         disabled={isPending}
       >
-        {isPending ? "Bejelentkezés..." : "Bejelentkezés"}
+        {isPending ? "Login..." : "Login"}
       </button>
     </form>
   );

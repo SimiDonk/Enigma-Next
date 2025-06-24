@@ -1,4 +1,4 @@
-import NavLinks from "@/app/ui/admin/nav-links";
+import NavLinks from "@/app/[locale]/ui/admin/nav-links";
 import SignOutButton from "./signout-button";
 
 export default function SideNav() {
