@@ -22,7 +22,7 @@ body {
 
 /* img url + opatcity */
 .hero {
-  background-image: url("/img/hero.jpg");
+  background-image: url("/img/enh_hero.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
