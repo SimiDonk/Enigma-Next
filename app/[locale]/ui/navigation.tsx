@@ -1,5 +1,6 @@
 "use client";
 
+import LanguageSwitcher from "./LanguageSwitcher";
 import NavBar, { ToggleDrawer } from "./navbar";
 export const Logo = () => {
   return (
@@ -22,7 +23,8 @@ export default function Navigation() {
       <Logo />
       <NavBar />
       <ToggleDrawer />
-      <button className="bg-amber-900 h-full px-8 cursor-pointer">ENG</button>
+      <LanguageSwitcher className="bg-white p-4" />
+      {/* <button className="bg-amber-900 h-full px-8 cursor-pointer">ENG</button> */}
     </div>
   );
 }
