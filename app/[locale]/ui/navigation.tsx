@@ -1,7 +1,5 @@
-"use client";
-
 import LanguageSwitcher from "./LanguageSwitcher";
-import NavBar, { ToggleDrawer } from "./navbar";
+import NavBar, { ToggleDrawer } from "./Navbar";
 export const Logo = () => {
   return (
     <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
@@ -16,15 +14,12 @@ export const Logo = () => {
 };
 
 export default function Navigation() {
-  // menu items -> Home, Rooms, Prices, Voucers, Contact
-
   return (
     <div className="sticky top-0 z-50 flex flex-row items-center justify-between px-4 h-16 bg-gray-800">
       <Logo />
       <NavBar />
       <ToggleDrawer />
-      <LanguageSwitcher className="bg-white p-4" />
-      {/* <button className="bg-amber-900 h-full px-8 cursor-pointer">ENG</button> */}
+      <LanguageSwitcher className="hidden md:block bg-red-800 w-[4rem] h-[3rem] mr-6 rounded-md" />
     </div>
   );
 }

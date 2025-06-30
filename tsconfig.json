@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/[locale]/ui/contact.jsx"
+    "app/[locale]/ui/Contact.jsx"
   ],
   "exclude": ["node_modules"]
 }

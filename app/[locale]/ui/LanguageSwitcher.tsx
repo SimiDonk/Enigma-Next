@@ -15,13 +15,12 @@ export default function LanguageSwitcher({
 
   const handleChange = (event: MouseEvent<HTMLButtonElement>) => {
     const newLocale = event.currentTarget.value === "en" ? "hu" : "en";
-    const hash = typeof window !== "undefined" ? window.location.hash : "";
-    router.replace(pathname + hash, { locale: newLocale });
+    router.replace(pathname, { locale: newLocale, scroll: false });
     console.log(window.location);
   };
   return (
     <button
-      className={`${className} bg-amber-800`}
+      className={`cursor-pointer ${className}`}
       value={locale}
       onClick={handleChange}
     >

@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function Prices() {
+  const t = useTranslations("Prices");
   return (
     <>
       <div className="flex flex-col justify-around text-3xl h-full gap-4">
-        <h4 className="text-4xl text-center">Prices</h4>
+        <h4 className="text-4xl text-center">{t("title")}</h4>
         <p>2 person -- 8000Huf/ppl (16000Huf)</p>
         <p>3 person -- 7000Huf/ppl (21000Huf)</p>
         <p>4 person -- 6000Huf/ppl (24000Huf)</p>

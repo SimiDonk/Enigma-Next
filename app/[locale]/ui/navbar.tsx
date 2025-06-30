@@ -1,3 +1,5 @@
+"use client";
+
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -12,27 +14,28 @@ import InfoIcon from "@mui/icons-material/Info";
 import RedeemIcon from "@mui/icons-material/Redeem";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { useState } from "react";
+import Link from "next/link";
 
 const navItems = [
   { name: "Home", icon: HomeIcon, href: "/" },
-  { name: "Rooms", icon: MeetingRoomIcon, href: "#rooms" },
-  { name: "Prices", icon: LocalAtmIcon, href: "#prices" },
-  { name: "Info", icon: InfoIcon, href: "#info" },
-  { name: "Vouchers", icon: RedeemIcon, href: "#vouchers" },
-  { name: "Contact", icon: ContactMailIcon, href: "#contact" },
+  { name: "Rooms", icon: MeetingRoomIcon, href: "/#rooms" },
+  { name: "Prices", icon: LocalAtmIcon, href: "/#prices" },
+  { name: "Info", icon: InfoIcon, href: "/#info" },
+  { name: "Vouchers", icon: RedeemIcon, href: "/#vouchers" },
+  { name: "Contact", icon: ContactMailIcon, href: "/#contact" },
 ];
 
 export default function NavBar() {
   return (
     <nav className="hidden md:flex flex-row h-full">
       {navItems.map((item) => (
-        <a
+        <Link
           href={item.href}
           key={item.name}
           className="h-full content-center px-8 text-sm font-medium hover:bg-red-900"
         >
           {item.name}
-        </a>
+        </Link>
       ))}
     </nav>
   );
@@ -51,7 +54,7 @@ export function ToggleDrawer() {
         Enigma
       </div>
       <Box
-        sx={{ width: 200 }}
+        sx={{ width: 300 }}
         role="presentation"
         onClick={toggleDrawer(false)}
       >
@@ -91,7 +94,7 @@ export function ToggleDrawer() {
           />
         </svg>
       </button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}
       </Drawer>
     </div>

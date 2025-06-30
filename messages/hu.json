@@ -1,6 +1,39 @@
 {
-  "HomePage": {
+  "MetaData": {
     "title": "Enigma szabadulószoba",
-    "description": "Enigma - 90perces szbadulós játékok Budapesten!"
-  }
+    "description": "90perces szbadulós játékok Budapesten!"
+  },
+  "Hero": {
+    "primary": "Enigma szabadulószoba",
+    "secondary": "90perces szbadulós játékok Budapesten!"
+  },
+  "Info": {
+    "title": "Szabadulószoba információ",
+    "accordion1": "Milyen szabadulószoba?",
+    "accordion2": "Milyen hosszú a szabadulószoba?",
+    "accordion3": "Milyen ara a szabadulószoba?",
+    "accordion4": "Mennyi szabadulószoba van?"
+  },
+  "Prices": {
+    "title": "Árak",
+    "price1": "Szabadulószoba 1",
+    "price2": "Szabadulószoba 2",
+    "price3": "Szabadulószoba 3",
+    "price4": "Szabadulószoba 4",
+    "price5": "Szabadulószoba 5",
+    "price6": "Szabadulószoba 6"
+  },
+  "Contact": {
+    "title": "Kapcsolat",
+    "address": "Cím:",
+    "phone": "Tel.:"
+  },
+  "footer": "A lábléc bejövő ...",
+  "global": {
+    "bookingbutton": "Foglalás"
+  },
+  "reservations": {
+    "title": "Foglalasok"
+  },
+  "secondary-title": "Szabadulós játék"
 }

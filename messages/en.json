@@ -1,6 +1,42 @@
 {
-  "HomePage": {
-    "title": "Enigma escape",
+  "MetaData": {
+    "title": "Enigma Escape",
     "description": "90 minutes long escape rooms at Budapest"
-  }
+  },
+  "Hero": {
+    "primary": "Enigma escape",
+    "secondary": "90 minutes long escape rooms at Budapest"
+  },
+  "Info": {
+    "title": "Info",
+    "accordion1": "What is an escape room?",
+    "accordion2": "How long is an escape room?",
+    "accordion3": "What is the price of an escape room?",
+    "accordion4": "How many escape rooms are there?"
+  },
+  "Prices": {
+    "title": "Prices",
+    "price1": "Escape room 1",
+    "price2": "Escape room 2",
+    "price3": "Escape room 3",
+    "price4": "Escape room 4",
+    "price5": "Escape room 5",
+    "price6": "Escape room 6"
+  },
+  "Contact": {
+    "title": "Contact",
+    "address": "Address:",
+    "phone": "Phone:"
+  },
+  "footer": "Footer incoming...",
+  "global": {
+    "bookingbutton": "Book now!"
+  },
+  "reservations": {
+    "title": "Reservations"
+  },
+  "Navbar": {
+    "home": "Home"
+  },
+  "secondary-title": "Escape game"
 }
