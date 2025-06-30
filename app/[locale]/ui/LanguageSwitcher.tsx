@@ -20,7 +20,7 @@ export default function LanguageSwitcher({
   };
   return (
     <button
-      className={`cursor-pointer ${className}`}
+      className={`cursor-pointer bg-red-800 w-[4rem] h-[3rem] mr-6 rounded-md ${className}`}
       value={locale}
       onClick={handleChange}
     >

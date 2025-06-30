@@ -15,6 +15,7 @@ import RedeemIcon from "@mui/icons-material/Redeem";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { useState } from "react";
 import Link from "next/link";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navItems = [
   { name: "Home", icon: HomeIcon, href: "/" },
@@ -65,7 +66,10 @@ export function ToggleDrawer() {
                 <ListItemIcon>
                   <item.icon />
                 </ListItemIcon>
-                <ListItemText primary={item.name} />
+
+                <Link href={item.href}>
+                  <ListItemText primary={item.name} />
+                </Link>
               </ListItemButton>
             </ListItem>
           ))}
@@ -73,6 +77,7 @@ export function ToggleDrawer() {
       </Box>
       <div className="grow">Telefonszám</div>
       <div>Cím</div>
+      <LanguageSwitcher />
     </div>
   );
 
@@ -100,5 +105,3 @@ export function ToggleDrawer() {
     </div>
   );
 }
-
-// valami

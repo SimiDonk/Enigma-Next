@@ -19,9 +19,7 @@ export default function Navigation() {
       <Logo />
       <NavBar />
       <ToggleDrawer />
-      <LanguageSwitcher className="hidden md:block bg-red-800 w-[4rem] h-[3rem] mr-6 rounded-md" />
+      <LanguageSwitcher className="hidden md:block" />
     </div>
   );
 }
-
-// valami

@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       lang={locale}
       className={`${roboto.variable} ${lora.variable} antialiased bg-black scroll-smooth`}
     >
-      <body className="max-w-[120rem] m-auto">
+      <body className="w-full md:max-w-[120rem] m-auto">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
